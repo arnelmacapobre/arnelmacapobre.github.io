@@ -11,7 +11,7 @@ $(function() {
 
     //animate avatar info
     $('.avatar_pic,.tel_me').click(function(){
-        $('.tip_avatar_bg').show().transition({ 
+        $('.tip_avatar_bg').show().transition({
             opacity: 100,
             top: '0',
             left: '0',
@@ -42,9 +42,9 @@ $(function() {
             rotate: '180deg'
         },300);
         $('body').removeClass('of');
-        $('.tip_avatar').transition({ 
-            scale: 0.8,            
-        },500,'easeOutQuart').transition({ 
+        $('.tip_avatar').transition({
+            scale: 0.8,
+        },500,'easeOutQuart').transition({
             y: -500,
             opacity: 0
         },function(){
@@ -71,7 +71,7 @@ $(function() {
         $(this).parent().removeClass('focus');
         $('.info_content').removeClass('over')
         $('.info_content .desc').removeClass('curr');
-    }); 
+    });
 
     //banner
     $('.carousel').carousel({
@@ -105,7 +105,7 @@ $(function() {
         $('.carousel').carousel(0);
         add_slide();
         open_layout();
-    }); 
+    });
 
     $('.product_2').click(function(){
         del_slide();
@@ -164,7 +164,7 @@ $(function() {
         scrollPos = $(this).scrollTop();
         $('.logo').css({
             opacity: 1-(scrollPos/300),
-            top: 50+(scrollPos/8)+'%'       
+            top: 50+(scrollPos/8)+'%'
         });
         $('.banner_bg').css({
             opacity: 1-(scrollPos/300)
